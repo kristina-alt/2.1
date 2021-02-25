@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="jquery-3.5.1.js"></script>
+        <script>
+            function asd(){
+             $("p").hide();
+            };
+
+           function Northern(){
+            if ($("#btn2").is(':checked')) {   
+                $(".Northern").show();
+            } 
+            else {
+                $(".Northern").hide();
+            }};
+
+            function Eastern(){
+            if ($("#btn1").is(':checked')) {   
+                $(".Eastern").show();
+            } 
+            else {
+                $(".Eastern").hide();
+            }};
+
+            function Southern(){
+            if ($("#btn3").is(':checked')) {   
+                $(".Southern").show();
+            } 
+            else {
+                $(".Southern").hide();
+            }};
+
+            function Western(){
+            if ($("#btn4").is(':checked')) {   
+                $(".Western").show();
+            } 
+            else {
+                $(".Western").hide();
+            }};
+            
+        </script>
+    </head>
+    <body onload="asd()">
+
+        <input type="checkbox" id="btn1" onchange='Northern();'/>Показать страны Северной Европы<br>
+        <input type="checkbox" id="btn2" onchange="Eastern()"/>Показать страны Восточной Европы<br>
+        <input type="checkbox" id="btn3" onchange="Southern()"/>Показать страны Южной Европы<br>
+        <input type="checkbox" id="btn4" onchange="Western()"/>Показать страны Западной Европы<br>
+        
+        <p class="Northern">Финляндия</p>
+		<p class="Northern">Исландия</p>
+		<p class="Northern">Дания</p>
+		<p class="Northern">Норвегия</p>
+		<p class="Northern">Швеция</p>
+		
+        <p class="Eastern">Румыния</p>
+		<p class="Eastern">Чехия</p>
+		<p class="Eastern">Хорватия</p>
+		<p class="Eastern">Словакия</p>
+		<p class="Eastern">Польша</p>
+		
+        <p class="Southern">Мальта</p>
+		<p class="Southern">Испания</p>
+		<p class="Southern">Италия</p>
+		<p class="Southern">Албания</p>
+		<p class="Southern">Греция</p>
+		
+        <p class="Western">Австрия</p>
+		<p class="Western">франция</p>
+		<p class="Western">Германия</p>
+		<p class="Western">Монако</p>
+		<p class="Western">Ирландия</p>
+        
+ 
+    </body>
+</html>
